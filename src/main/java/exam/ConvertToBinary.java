@@ -3,7 +3,18 @@ package exam;
 public class ConvertToBinary {
 
   public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
+    int valueIn = n;
+        int rem=0,res=0;
+        String str;
+        while(valueIn>0)
+        {
+            rem=valueIn%2;
+            valueIn=valueIn/2;
+            str+=String.valueOf(rem);
+        }
+        
+        return str;
+    
+  
   }
 }
